@@ -2,7 +2,7 @@ version: 0.1
 phases:
   install:
     runtime-versions:
-        python: 3.5.2
+      python: 3.5.2
     commands:
       - aws cloudformation package --template-file samTemplate.yaml --s3-bucket kulakunnath --output-template-file outputSamTemplate.yaml
 artifacts:
